@@ -32,11 +32,12 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 const Rotator = Me.imports.rotator;
 
+// Offsetted for the GPD Pocket 3's native portrait display.
 const Orientation = Object.freeze({
-    'normal': 0,
-    'left-up': 1,
-    'bottom-up': 2,
-    'right-up': 3
+    'normal': 1,
+    'left-up': 0,
+    'bottom-up': 3,
+    'right-up': 2
 });
 
 class SensorProxy {
